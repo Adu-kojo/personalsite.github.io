@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal  Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href= "#"> home</a></li>
+                    <li><a href= "#"> About</a></li>
+                    <li><a href= "#"> Portfolio</a></li>
+                    <li><a href= "#"> Service</a></li>
+                    <li><a href= "#"> Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT</p>
+                <h1>I am <span>Nii Adu</span><br> Acquah From Ghana</h1>
+            </div>
+        </div>
+
+    </div>
+    <!---------------about-------------->
+   <div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about col-1">
+        <img src="images/po.jpg" >
+      </div>
+      <div class="about col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>My name is George Acquah.From Ghana odorkor to be precise.I am a student in ATU. </p>
+        <div class="tab-titles">
+            <p class="tab-links active-tab" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-link" id="skills">
+          <ul>  
+            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+            <li><span>Web development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/IOS Apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+            <li><span>Web development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/IOS Apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+            <li><span>Web development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/IOS Apps</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classlist.remove("active-tab");    
+        }
+       }
+
+    </script>
+    
+</body>
+</html>
